@@ -1,0 +1,31 @@
+/* Style Sheet for Assignment 7 */
+
+#pos{position: absolute;}
+
+/* 6.1 */
+#one{width: 20ch;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;}
+
+#oneback{background-image: url("picture.jpg");
+         background-position: center;
+         background-repeat: no-repeat;
+         filter: grayscale(100%);}
+
+/* 6.2 */
+#two{position: absolute;
+     left: 625px;
+     vertical-align: middle;}
+
+#picture{filter: grayscale(100%);
+         position: absolute;
+         top: 415px;
+         left: 8px;}
+
+/* 6.9 */
+#text{position: relative;}
+
+/* 6.10 */
+#color {position: relative;
+        color: blue;}

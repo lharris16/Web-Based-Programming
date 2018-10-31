@@ -1,0 +1,61 @@
+/*
+lharris16@georgefox.edu
+Lab 1 - Color Table
+2017-02-07
+*/
+
+#colortable {
+    border-collapse: collapse;
+}
+
+table tr td {
+    border: 2px solid black;
+}
+
+tr {
+    height: 100px;
+}
+
+td {
+    width: 100px;
+}
+
+.red {
+    background-color: red;
+    text-align: left;
+    vertical-align: top;
+}
+
+.orange {
+    background-color: orange;
+    text-align: center;
+    vertical-align: top;
+}
+
+.yellow {
+    background-color: yellow;
+    text-align: right;
+    vertical-align: top;
+}
+
+.purple {
+    background-color: purple;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.green {
+    background-color: green;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.blue {
+    background-color: blue;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.empty {
+    border: 0px;
+}

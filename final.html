@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Final Project</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="projectFinal.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="finalStyle.css" />
+   </head>
+
+   <body onload="buttonOptions()">
+     <a href="assignments.html">Return to Assignments</a>
+     <hr />
+
+     <div class="bg-img">
+       <div class="container">
+         <h2><center>Country Populations</center></h2>
+         <center>
+           Please select a country, year, and click "Results" to show the
+           population count.
+           <br />
+           <br />
+           <font size="2">
+             If United States is chosen, population for states are available
+             for 2010.
+           </font>
+       </center>
+         <br />
+         <table>
+           <tr>
+             <td>Country:</td>
+             <td><select id="place"></select></td>
+           </tr>
+           <tr>
+             <td style="text-align: right;">Year:</td>
+             <td><select id="time"></select></td>
+           </tr>
+         </table>
+         <input type="button" onclick="query();" value="Results" />
+       </div>
+       <span style="opacity: 0.5;">
+         <font size="1">Photo by: Samuel Elkins</font>
+       </span>
+
+       <textarea id="WorldPop" rows="10" cols="80" style="display:none;"></textarea>
+       <textarea id="USACensus" rows="10" cols="80" style="display:none;"></textarea>
+     </div>
+
+     <h2 id="header"></h2>
+     <canvas id="myChart" width="240" height="100"></canvas>
+     <hr />
+     <h2 id="USA"></h2>
+     <canvas id="USAChart" width="240" height="100"></canvas>
+
+   </body>
+</html>

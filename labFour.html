@@ -1,0 +1,94 @@
+<!--Leanna, Gabe, James-->
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>
+      Lab 4
+    </title>
+    <script type = "text/javascript" src = "fourthlab.js">
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h2>Sports Form</h2>
+      <hr />
+
+      <form name="form"
+            onsubmit="return formvalidation(this);"
+            action="http://dhansen.cs.georgefox.edu/~dhansen/echoForm.php"
+            method="post">
+
+        <p>
+          <label for="email">
+            Email Address:
+          </label>
+          <br />
+          <input type="text" size="80"
+                 name="email" id="email"
+                 placeHolder="Email"
+                 onchange="emailvalidation(this);" />
+        </p>
+
+        <p>
+          <label for="password1">
+            Password:
+          </label>
+          <br />
+          <input type="password" name="password1"
+                 id="password1" placeHolder="Password"
+                 onchange="passvalidation(this);" />
+          <br />
+          <input type="password" name="password2"
+                 id="password2" placeholder="Confirm password"
+                 onchange="passvalidation(this);" />
+        </p>
+
+        <p>
+          <label>
+            Choose at least one sport:
+          </label>
+          <br />
+          <input type="checkbox" name="sport"
+                 id="Soccer" value="Soccer" />
+                 Soccer
+          <br />
+          <input type="checkbox" name="sport"
+                 id="Tennis" value="Tennis" />
+                 Tennis
+          <br />
+          <input type="checkbox" name="sport"
+                 id="Curling" value="Curling" />
+                 Curling
+          <br />
+        </p>
+
+        <p>
+          <label>
+            Choose your favorite sport:
+          </label>
+          <br />
+          <input type="radio" name="sports"
+                 id="soccer" value="soccer"
+                 checked="true"/>
+                 Soccer
+          <br />
+          <input type="radio" name="sports"
+                 id="tennis" value="tennis" />
+                 Tennis
+          <br />
+          <input type="radio" name="sports"
+                 id="curling" value="curling" />
+                 Curling
+        </p>
+        <hr />
+
+        <p>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </p>
+
+    </form>
+    <hr />
+  </body>
+</html>

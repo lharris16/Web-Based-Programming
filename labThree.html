@@ -1,0 +1,42 @@
+<!--Leanna, Gabe, and James-->
+<html>
+   <head>
+      <title>Compound Interest</title>
+      <script type = "text/javascript" src="interest.js"></script>
+   </head>
+   <body>
+
+      <h2>Compound Interest</h2>
+
+      <table style="border : 0px">
+         <tr>
+            <td style="text-align : right"><label for="balance">Initial Balance: </label></td>
+            <td><input type="text" name="balance" id="balance" />
+            </td>
+         </tr>
+         <tr>
+            <td style="text-align : right"><label for="rate">Interest Rate (%): </label></td>
+            <td><input type="text" name="rate" id="rate" />
+            </td>
+         </tr>
+         <tr>
+            <td style="text-align : right"><label for="years">Number of Years: </label></td>
+            <td><input type="text" name="years" id="years" />
+         </tr>
+         <tr>
+            <td style="text-align : right"><label for="total">Total: </label></td>
+            <td><span id="total"></span></td>
+         </tr>
+      </table>
+
+      <script>
+      var balance = document.getElementById("balance");
+      var rate = document.getElementById("rate");
+      var years = document.getElementById("years");
+      balance.addEventListener("change", validResponse, false);
+      rate.addEventListener("change", validResponse, false);
+      years.addEventListener("change", validResponse, false);
+      </script>
+
+   </body>
+</html>

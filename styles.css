@@ -1,0 +1,8 @@
+
+  .compact{background-color:pink;}
+  .midsize{background-color:blue;}
+  .sports{background-color:red;}
+
+  ol{list-style-type: upper-roman;}
+  ol ol{list-style-type: upper-alpha;}
+  ol ol ol{list-style-type: decimal;}

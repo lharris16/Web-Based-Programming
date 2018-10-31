@@ -1,0 +1,45 @@
+<!-- Leanna, James, and Gabe-->
+
+<html lang="en">
+  <head>
+    <title>
+      Lab 6
+    </title>
+  </head>
+
+  <body>
+      <a href="assignments.html">Return to Assignments</a>
+      <hr />
+      <h2>Jumble Solver</h2>
+      <hr />
+      <form name="jumbled" action="sixLab.php"
+            method="POST" onsubmit="return validateLetters();">
+        <label>
+        </label>
+        <br />
+        Please enter 1-8 letters into the text box.
+        <br />
+        <input type = "text" id="letters" pattern="[A-Za-z\\s]*" name="letters"
+               maxlength="8" placeholder="Enter Letters" />
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+      <script type="text/javascript">
+      function validateLetters()
+      {
+        var submit = false;
+        var jumbledLetters = document.forms["jumbled"]["letters"].value;
+        if(jumbledLetters == "")
+        {
+          alert("Please enter 1-8 letters into the text box.");
+        }
+        else
+        {
+          submit = true;
+        }
+        return submit;
+      }
+      </script>
+  </body>
+</html>

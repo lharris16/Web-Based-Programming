@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <title>
+      Assignment Six
+    </title>
+    <script type = "text/javascript" src = "assignsix.js">
+    </script>
+  </head>
+
+  <body>
+    <a href="assignments.html">Return to Assignments</a>
+
+    <hr/>
+    <h2>
+      5.3
+    </h2>
+    <hr/>
+    <form name = "problemOne" action = "">
+      <p>
+        <label>
+          <input type = "checkbox" name = "Apple"
+                 value = "0.59"
+                 onclick = "totalPrice(this);" />
+          Apple
+        </label>
+        <br />
+        <label>
+          <input type = "checkbox" name = "Orange"
+                 value = "0.49"
+                 onclick = "totalPrice(this);" />
+          Orange
+        </label>
+        <br />
+        <label>
+          <input type = "checkbox" name = "Banana"
+                 value = "0.39"
+                 onclick = "totalPrice(this);" />
+          Banana
+        </label>
+      </p>
+      <p>
+        <input type = "submit" value = "Submit"
+               onclick = "submitForm();" />
+        <input type = "reset" value = "Clear Selection" />
+      </p>
+    </form>
+
+    <hr/>
+    <h2>
+      5.4
+    </h2>
+    <hr/>
+    <form name = "problemTwo" action = "">
+      <p>
+        <label>
+          <input type = "text" id="Apple"
+                 size = "2" />
+          Apple(s)
+        </label>
+        <br />
+        <label>
+          <input type = "text" id="Orange"
+                 size = "2" />
+          Orange(s)
+        </label>
+        <br />
+        <label>
+          <input type = "text" id="Banana"
+                 size = "2" />
+          Banana(s)
+        </label>
+      </p>
+      <p>
+        <input type = "submit" value = "Submit"
+               onclick = "totalPrice2();" />
+        <input type = "reset" value = "Clear Selection" />
+      </p>
+    </form>
+
+    <hr/>
+    <h2>
+      5.5
+    </h2>
+    <hr/>
+    <form name = "problemThree" action = "">
+      <p>
+        <label>
+          <input type = "text" id="apple"
+                 size = "2" onblur= "validValue(this);" />
+          Apple(s)
+        </label>
+        <br />
+        <label>
+          <input type = "text"  id="orange"
+                 size = "2" onblur = "validValue(this);" />
+          Orange(s)
+        </label>
+        <br />
+        <label>
+          <input type = "text" id="banana"
+                 size = "2" onblur = "validValue(this)"/>
+          Banana(s)
+        </label>
+      </p>
+      <p>
+        <input type = "submit" value = "Submit"
+               onclick = "totalPrice3();" />
+        <input type = "reset" value = "Clear Selection" />
+      </p>
+    </form>
+
+    <hr/>
+    <h2>
+      5.6
+    </h2>
+    <hr/>
+    <form name = "problemFour" action = "">
+      <p>
+        <label>
+          <input type = "text" min = "0" max = "99"
+                 id="App" size = "2" onblur="apple(this);"/>
+          Apple(s)
+        </label>
+        <br />
+        <label>
+          <input type = "text" min = "0" max = "99"
+                 id="Ora" size = "2" onblur="orange(this);"/>
+          Orange(s)
+        </label>
+        <br />
+        <label>
+          <input type = "text" min = "0" max = "99"
+                 id="Ban" size = "2" onblur="banana(this);"/>
+          Banana(s)
+        </label>
+      </p>
+      <p>
+        <input type = "submit" value = "Submit"
+               onclick = "totalPrice4();"/>
+        <input type = "reset" value = "Clear Selection" />
+      </p>
+    </form>
+
+    <hr/>
+  </body>
+</html>

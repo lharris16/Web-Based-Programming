@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+      <title>Weather Forecast</title>
+      <script type="text/javascript" src = "assigneight.js"></script>
+      <style>
+        td {text-align:center; width:12.5%;}
+      </style>
+   </head>
+
+   <body>
+     <a href="assignments.html">Return to Assignments</a>
+     <hr />
+     <br />
+     <form id=zipCode onsubmit= "return createZipcode()">
+      <label for="zipcode">
+        Please enter a zipcode to display a forecast.
+      </label>
+      <br />
+      <input type = "text" id="zipcode"
+             size="6" placeholder="Zipcode"/>
+      <br />
+      <br />
+      <button type="submit">Get Forecast</button>
+     </form>
+
+     <h2><div id="header"></div></h2>
+     <table id="table" border="1">
+       <tr>
+         <th><div id=Zip></div></th>
+         <td id=image1>No Data</td>
+         <td id=image2>No Data</td>
+         <td id=image3>No Data</td>
+         <td id=image4>No Data</td>
+         <td id=image5>No Data</td>
+         <td id=image6>No Data</td>
+         <td id=image7>No Data</td>
+       </tr>
+       <tr>
+         <th>Date</th>
+         <td id=date1></td>
+         <td id=date2></td>
+         <td id=date3></td>
+         <td id=date4></td>
+         <td id=date5></td>
+         <td id=date6></td>
+         <td id=date7></td>
+       </tr>
+       <tr>
+         <th>Weather Conditions</th>
+         <td id=conditions1></td>
+         <td id=conditions2></td>
+         <td id=conditions3></td>
+         <td id=conditions4></td>
+         <td id=conditions5></td>
+         <td id=conditions6></td>
+         <td id=conditions7></td>
+       </tr>
+       <tr>
+         <th>High Temperatures</th>
+         <td id=high1></td>
+         <td id=high2></td>
+         <td id=high3></td>
+         <td id=high4></td>
+         <td id=high5></td>
+         <td id=high6></td>
+         <td id=high7></td>
+       </tr>
+       <tr>
+         <th>Low Temperatures</th>
+         <td id=low1></td>
+         <td id=low2></td>
+         <td id=low3></td>
+         <td id=low4></td>
+         <td id=low5></td>
+         <td id=low6></td>
+         <td id=low7></td>
+       </tr>
+     </table>
+     <br />
+     <div id="watches"></div>
+     <hr />
+   </body>
+</html>

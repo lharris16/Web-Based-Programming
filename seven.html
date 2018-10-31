@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <title>
+      Assignment Seven
+    </title>
+    <script type = "text/javascript" src = "assignseven.js">
+    </script>
+    <link rel = "stylesheet" type = "text/css"
+          href="sevenassignment.css" />
+  </head>
+
+  <body>
+    <a href="assignments.html">Return to Assignments</a>
+
+    <hr/>
+    <h2 class="pos">
+      6.1
+    </h2>
+    <hr/>
+    <div id="one">
+      <div id="oneback">
+        <script>text();</script>
+      </div>
+    </div>
+
+    <hr/>
+    <h2 class="pos">
+      6.2
+    </h2>
+    <hr/>
+
+    <div id=picture>
+      <img src="picture.jpg" alt="picture"
+           height="66px" width="100px">
+    </div>
+    <div>
+      <form action="">
+        <table id=two>
+          <tr>
+            <label>
+              <td><button id=Northwest value="Northwest">Northwest</button></td>
+            </label>
+          </tr>
+          <tr>
+            <label>
+              <td><button id=Northeast value="Northeast">Northeast</button></td>
+            </label>
+          </tr>
+          <tr>
+            <label>
+              <td><button id=Southwest value="Southwest">Southwest</button></td>
+            </label>
+          </tr>
+          <tr>
+            <label>
+              <td><button id=Southeast value="Southeast">Southeast</button></td>
+            </label>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script>
+      document.getElementById("Northwest").addEventListener("click", move, false);
+      document.getElementById("Northeast").addEventListener("click", move, false);
+      document.getElementById("Southwest").addEventListener("click", move, false);
+      document.getElementById("Northeast").addEventListener("click", move, false);
+    </script>
+
+    <br /> <br /> <br /> <br /> <br /> <br /> <br />
+    <hr/>
+    <h2 class="pos">
+      6.8
+    </h2>
+    <hr/>
+    <p>
+        <img src="white.jpg" alt=""
+             style="position: absolute; width: 1330px; z-index: 0;
+                   height: 300px; top: 620px; left: 8px;"
+             id="background" onclick="movepicture(event);">
+        <img src="picture.jpg" alt="picture"
+             style="position: absolute; top: 625px; left: 8px; z-index: 1;"
+             height="66px" width="100px" id="pic" >
+    </p>
+    <br /> <br /> <br /> <br /> <br /> <br /> <br />
+    <br /> <br /> <br /> <br /> <br /> <br /> <br />
+    <br /> <br />
+
+    <hr/>
+    <h2 class="pos">
+      6.9
+    </h2>
+    <hr/>
+    <p>
+      <span id="text" class="text">
+        Save Time with TIME-SAVER 2.2
+      </span>
+      <script>
+        setInterval(function(){movetext();}, 10);
+      </script>
+    </p>
+
+    <hr/>
+    <h2 class="pos">
+      6.10
+    </h2>
+    <hr/>
+    <p>
+      <span id="color" class="color">Save time with TIME-SAVER 2.2</span>
+      <script>
+         setInterval(function(){changecolor();}, 15);
+      </script>
+    </p>
+
+    <hr/>
+  </body>
+</html>
